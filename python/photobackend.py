@@ -42,7 +42,7 @@ class PhotoAPI:
       if(is_valid != None):
          return make_response(jsonify(is_valid), 400)
 
-      is_valid = api_helper.check_endpoint_info(request.files, ['uploaded_image'])
+      is_valid = apihelper.check_endpoint_info(request.files, ['uploaded_image'])
       if(is_valid != None):
          return make_response(jsonify(is_valid), 400)
       results = []
